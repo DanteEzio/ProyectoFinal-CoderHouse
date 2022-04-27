@@ -1,0 +1,1016 @@
+header {
+  background-color: #212529;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo h5 {
+  color: #fff;
+}
+
+main {
+  color: #fff;
+  background-color: #212529;
+}
+main #informacion-portada {
+  /* cambio de colores */
+  -webkit-animation: color1 15s infinite;
+  animation: color1 15s infinite;
+  /* aqui termina */
+}
+main #informacion-portada .portada {
+  text-align: justify;
+  padding: 40px 20px 60px 20px;
+}
+main #collage .gallery {
+  padding: 0.5rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+main #collage .gallery .wrapper {
+  animation-name: galleryInMotion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main #collage .gallery .wrapper .gallery__wrapper {
+  display: inline-block;
+  width: 100%;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .bubble-item {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+  float: left;
+  height: 4rem;
+  overflow: hidden;
+  width: 4rem;
+  margin: 1rem;
+  transition: all 250ms ease-in-out;
+  -webkit-animation: collage 15s infinite;
+  animation: collage 15s infinite;
+}
+@keyframes collage {
+  0% {
+    box-shadow: 0px 0px 15px #93da49;
+  }
+  25% {
+    box-shadow: 0px 0px 15px #fe575f;
+  }
+  50% {
+    box-shadow: 0px 0px 15px #c237db;
+  }
+  75% {
+    box-shadow: 0px 0px 15px #40f2fe;
+  }
+  100% {
+    box-shadow: 0px 0px 15px #faed27;
+  }
+  0% {
+    border: 3px solid #93da49;
+  }
+  25% {
+    border: 3px solid #fe575f;
+  }
+  50% {
+    border: 3px solid #c237db;
+  }
+  75% {
+    border: 3px solid #40f2fe;
+  }
+  100% {
+    border: 3px solid #faed27;
+  }
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .bubble-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px #ccc;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+  height: 7rem;
+  width: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+  background-image: url(../artistas/imagenes/radiohead.webp);
+  height: 6rem;
+  width: 6rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+  background-image: url(../artistas/imagenes/phoenix.webp);
+  height: 7rem;
+  width: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+  background-image: url(../artistas/imagenes/interpol.jpg);
+  height: 8rem;
+  width: 8rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+  background-image: url(../artistas/imagenes/keane.webp);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+  width: 6rem;
+  height: 6rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+  background-image: url(../artistas/imagenes/coldplay.jpeg);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+  background-image: url(../artistas/imagenes/Block-Party-band.png);
+  height: 6rem;
+  width: 6rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+  width: 8rem;
+  height: 8rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+  background-image: url(../artistas/imagenes/keane.webp);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+  width: 6rem;
+  height: 6rem;
+}
+main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+  width: 7rem;
+  height: 7rem;
+}
+main #collage .gallery .paused {
+  animation-play-state: paused;
+}
+main #galeria .noticias .noticia {
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+main #galeria .noticias .noticia .texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: 100;
+}
+main #galeria .noticias .noticia p {
+  animation-name: texto-ocultar;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: alternate;
+}
+main #galeria .noticias .noticia img {
+  width: 100%;
+  height: 100%;
+  animation-name: img-distorcionada;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main #galeria .noticias .noticia img:hover {
+  box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
+}
+main #galeria .noticias .adentro .row .imagen-adentro {
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+main #galeria .noticias .adentro .row .imagen-adentro .texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: 100;
+}
+main #galeria .noticias .adentro .row .imagen-adentro p {
+  animation-name: texto-ocultar;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main #galeria .noticias .adentro .row .imagen-adentro img {
+  width: 100%;
+  height: 100%;
+  animation-name: img-distorcionada;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+main #galeria .noticias .adentro .row .imagen-adentro img:hover {
+  box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
+}
+main #album-dia {
+  /* cambio de colores */
+  -webkit-animation: album-dia 15s infinite;
+  animation: album-dia 15s infinite;
+  /* aqui termina */
+}
+@keyframes album-dia {
+  0% {
+    background-color: #903495;
+  }
+  25% {
+    background-color: #6f3460;
+  }
+  50% {
+    background-color: #4a354f;
+  }
+  75% {
+    background-color: #d20076;
+  }
+  100% {
+    background-color: #ff0076;
+  }
+}
+main #album-dia .contenedor-disco .albumes .album img {
+  height: 330px;
+}
+main #album-dia .contenedor-disco .albumes .playlist iframe {
+  width: 50%;
+}
+main #siguenos {
+  background-color: #212529;
+}
+main #siguenos .row .formato-escribenos form button {
+  width: 100%;
+  border: none;
+  /* cambio de colores */
+  -webkit-animation: random 15s infinite;
+  animation: random 15s infinite;
+}
+@keyframes random {
+  15% {
+    background-color: #903495;
+  }
+  30% {
+    background-color: #6f3460;
+  }
+  45% {
+    background-color: #4a354f;
+  }
+  60% {
+    background-color: #d20076;
+  }
+  75% {
+    background-color: #ff0076;
+  }
+}
+main #siguenos .row .formato-escribenos form button:hover {
+  box-shadow: 0px 0px 20px 1px rgba(188, 228, 42, 0.616);
+}
+
+footer {
+  background-color: #212529;
+}
+
+/* ******************* Media Queries *************************************/
+/* No aplica */
+@media screen and (max-width: 1400px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #album-dia .contenedor-disco .albumes .album img {
+    height: 330px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 50%;
+  }
+}
+/* No aplica */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 5rem;
+    width: 5rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 5rem;
+    height: 5rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 5rem;
+    width: 5rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 5rem;
+    height: 5rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #galeria .noticias .noticia {
+    height: 500px;
+  }
+  main #galeria .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 6rem;
+    width: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 6rem;
+    height: 6rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #galeria .noticias .noticia {
+    height: 450px;
+  }
+  main #galeria .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro {
+    height: 225px;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro p {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 7rem;
+    width: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 7rem;
+    height: 7rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #galeria .noticias .noticia {
+    height: 450px;
+  }
+  main #galeria .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro {
+    height: 300px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 70%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #galeria .noticias .noticia {
+    height: 450px;
+  }
+  main #galeria .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro {
+    height: 450px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 80%;
+  }
+}
+@media (min-width: 430px) and (max-width: 575px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #galeria .noticias .noticia {
+    height: 350px;
+  }
+  main #galeria .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro {
+    height: 350px;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 429px) {
+  main #collage .gallery .wrapper {
+    animation: galleryInMotion 5s infinite;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item1 {
+    background-image: url(../artistas/imagenes/thekillers2019.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item2 {
+    background-image: url(../artistas/imagenes/radiohead.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item3 {
+    background-image: url(../artistas/imagenes/phoenix.webp);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item4 {
+    background-image: url(../artistas/imagenes/interpol.jpg);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item5 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item6 {
+    background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item7 {
+    background-image: url(../artistas/imagenes/coldplay.jpeg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item8 {
+    background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item9 {
+    background-image: url(../artistas/imagenes/Block-Party-band.png);
+    height: 8rem;
+    width: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item10 {
+    background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item11 {
+    background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item12 {
+    background-image: url(../artistas/imagenes/keane.webp);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item13 {
+    background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster .item14 {
+    background-image: url(../artistas/imagenes/The-Kooks.jpg);
+    width: 8rem;
+    height: 8rem;
+  }
+  main #collage .gallery .paused {
+    animation-play-state: paused;
+  }
+  main #galeria .noticias .noticia {
+    height: 300px;
+  }
+  main #galeria .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro {
+    height: 300px;
+  }
+  main #galeria .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #album-dia .contenedor-disco .albumes .album img {
+    width: 90%;
+    height: 300px;
+  }
+  main #album-dia .contenedor-disco .albumes .playlist iframe {
+    width: 90%;
+  }
+}
+@keyframes galleryInMotion {
+  0% {
+    -webkit-transform: translateX(-2%);
+    -moz-transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(3%);
+    -moz-transform: translateX(10%);
+  }
+  100% {
+    -webkit-transform: translateX(-2%);
+    -moz-transform: translateX(-10%);
+  }
+}
+@keyframes texto-ocultar {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes img-distorcionada {
+  0% {
+    filter: grayscale(70%);
+  }
+  25% {
+    filter: grayscale(0%);
+  }
+  50% {
+    filter: grayscale(70%);
+  }
+  75% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(70%);
+  }
+}
+@keyframes circleMove1 {
+  20% {
+    transform: translate3d(1px, 2px, 0);
+  }
+  60% {
+    transform: translate3d(-2px, -1px, 0);
+  }
+  100% {
+    transform: translate3d(1px, 1px, 0);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

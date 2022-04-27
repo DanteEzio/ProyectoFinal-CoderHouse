@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="contacto.css" />
+    <!-- Bootstrap-CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap-Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- Logo -->
+      <div class="logo border-bottom">
+        <a class="navbar-brand" href="../index.html">
+          <img src="imagenes/logoHeader.svg" alt="" style="width: 70px" />
+        </a>
+        <h5>Ur-Space</h5>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-2 border-bottom"
+    >
+      <div class="container">
+        <div class="division">
+          <button
+            class="navbar-toggler mb-3 mt-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Pestañas NAVBAR -->
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav my-auto mb-2 mb-lg-0 h5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../gira/gira.html">GIRA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../artistas/artistas.html"
+                  >ARTISTAS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../musica/musica.html"
+                  >MÚSICA / VIDEOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Iconos -->
+        <div class="navbar-icons h3">
+          <a href=""><i class="bi bi-facebook" style="color: aliceblue"></i></a>
+          <a href=""
+            ><i class="bi bi-instagram" style="color: aliceblue"></i
+          ></a>
+          <a href=""><i class="bi bi-youtube" style="color: aliceblue"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="border-bottom">
+      <section id="artistas" class="container">
+        <h1 class="text-center text-light pt-4">
+          Contá<span class="text-danger">ctanos</span>
+        </h1>
+
+        <!-- Formulario -->
+        <section class="formulario pt-3 pb-5">
+          <div class="envoltura row mx-auto">
+            <div class="formato-contacto col-lg-8 col-md-8 p-4">
+              <form class="text-light">
+                <h3 class="text-light pb-2">Completa los campos</h3>
+                <div class="row">
+                  <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Nombre *</label
+                    >
+                    <input
+                      type="name"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="nameHelp"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      Ingresa tu nombre completo
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Correo *</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      Ingresa tu Correo electrónico
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Teléfono *</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control"
+                      id="exampleInputPhone"
+                      aria-describedby="phoneHelp"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      Número de teléfono a diez dígitos
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Asunto *</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Selecciona...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <div id="emailHelp" class="form-text">
+                      Selecciona el asunto
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-12 col-md-12 col-sm-12">
+                    <label for="validationTextarea" class="form-label"
+                      >Mensaje *</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="validationTextarea"
+                      required
+                    ></textarea>
+                    <div id="emailHelp" class="form-text">
+                      Escribe el motivo de mensaje
+                    </div>
+                  </div>
+
+                  <div class="mb-3 mt-3 text-center botones">
+                    <div class="boton">
+                      <button type="submit" class="btn btn-primary boton">
+                        Enviar
+                      </button>
+                    </div>
+                    <div class="boton">
+                      <button type="reset" class="btn btn-primary boton">
+                        Resetear
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info text-light col-lg-4 col-md-4 my-auto">
+              <h4>Más Información</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"> Roma norte 45</i>
+                </li>
+                <li>
+                  <i class="fas fa-phone"> 111 111 111 111</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"> dante-Ezio@website.com</i>
+                </li>
+              </ul>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                earum neque cupiditate expedita aperiam vitae.
+              </p>
+              <p>Ur-Space</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="section1 border-bottom">
+        <div class="container py-2">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="../index.html"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="../gira/gira.html"
+                >GIRA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-2 text-muted"
+                href="../artistas/artistas.html"
+                >ARTISTAS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="../musica/musica.html"
+                >MÚSICA / VIDEOS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="contacto.html"
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="container py-2">
+          <p class="text-center text-muted">© 2022 Dante, Inc</p>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Bootstrap-JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

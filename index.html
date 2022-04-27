@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <!-- Bootstrap-CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap-Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- Logo -->
+      <div class="logo border-bottom">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/logoHeader.svg" alt="" style="width: 70px" />
+        </a>
+        <h5>Ur-Space</h5>
+      </div>
+    </header>
+
+    <!-- NavBar -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-2 border-bottom"
+    >
+      <div class="container">
+        <div class="division">
+          <button
+            class="navbar-toggler mb-3 mt-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Pestañas NAVBAR -->
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav my-auto mb-2 mb-lg-0 h5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gira/gira.html">GIRA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="artistas/artistas.html">ARTISTAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="musica/musica.html"
+                  >MÚSICA / VIDEOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Iconos -->
+        <div class="navbar-icons h3 pt-2">
+          <a href=""><i class="bi bi-facebook" style="color: aliceblue"></i></a>
+          <a href=""
+            ><i class="bi bi-instagram" style="color: aliceblue"></i
+          ></a>
+          <a href=""><i class="bi bi-youtube" style="color: aliceblue"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="border-bottom">
+      <!-- Portada -->
+      <section id="informacion-portada" class="border-bottom">
+        <div class="container portada">
+          <h4>Explora la música más popular de tus grupos favoritos</h4>
+          <p class="lead">
+            Centralizamos todos tus servicios de música favoritos y ponemos en
+            un solo lugar la posibilidad de escuchar, ver y compartir tu mundo
+            musical.
+            <br />
+            Debajo puedes ver, en tiempo real, los hábitos y tendencias
+            musicales de la comunidad Ur-Space.
+          </p>
+        </div>
+      </section>
+
+      <!-- Collage -->
+      <section id="collage" class="border-bottom pb-4">
+        <div class="container">
+          <div class="intro text-center pt-5">
+            <h3>Artistas en alza</h3>
+            <h6>Estos artistas son, ahora mismo, tendencia global</h6>
+            <p class="lead">
+              Haz clic en cada burbuja para conocer mejor cada una de las
+              diferentes bandas.
+            </p>
+          </div>
+          <div class="gallery">
+            <div class="wrapper">
+              <div class="gallery__wrapper">
+                <div class="gallery-cluster">
+                  <a href="#" class="bubble-item item1"></a>
+                  <a href="#" class="bubble-item item2"></a>
+                  <a href="#" class="bubble-item item3"></a>
+                  <a href="#" class="bubble-item item4"></a>
+                  <a href="#" class="bubble-item item5"></a>
+                  <a href="#" class="bubble-item item6"></a>
+                  <a href="#" class="bubble-item item7"></a>
+                </div>
+                <div class="gallery-cluster">
+                  <a href="#" class="bubble-item item8"></a>
+                  <a href="#" class="bubble-item item9"></a>
+                  <a href="#" class="bubble-item item10"></a>
+                  <a href="#" class="bubble-item item11"></a>
+                  <a href="#" class="bubble-item item12"></a>
+                  <a href="#" class="bubble-item item13"></a>
+                  <a href="#" class="bubble-item item14"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Noticias -->
+      <section id="galeria" class="border-bottom pb-4">
+        <div class="container">
+          <div class="titulo-main text-center pt-5">
+          <h2>Últimas Noticias</h2>
+        </div>
+        <!-- "ROW" Esta clase modifica el tamaño del contenido dependiendo de los que se tenga adentro -->
+        <!-- Noticias -->
+        <div class="noticias row align-items-center pt-4 mx-auto">
+          <!-- Columnas para pantallas grandes que midan 6 espacios, recordemos que tenemos hasta 12 espacios disponibles por columna -->
+          <div class="noticia col-lg-6 col-md-12">
+            <img
+              src="imagenes/concierto.png"
+              alt="Galeria Noticias"
+              class="img-fluid rounded"
+            />
+            <p class="lead card-text texto-encima">Proximos conciertos 2022</p>
+          </div>
+
+          <div class="col-lg-6 col-md-12 adentro">
+            <div class="row">
+              <div class="imagen-adentro col-lg-6 col-md-6 col-sm-12">
+                <img
+                  src="imagenes/travis1.webp"
+                  alt="Galeria Noticias"
+                  class="img-fluid rounded"
+                />
+                <p class="lead card-text texto-encima">
+                  Nuevo álbum "The Invisible Band"
+                </p>
+              </div>
+              <div class="imagen-adentro col-lg-6 col-md-6 col-sm-12">
+                <img
+                  src="imagenes/vaccines.jpg"
+                  alt="Galeria Noticias"
+                  class="img-fluid rounded"
+                />
+                <p class="lead card-text texto-encima">
+                  Gana 2 boletos para nuestro próximo concierto
+                </p>
+              </div>
+              <div class="imagen-adentro col-lg-6 col-md-6 col-sm-12">
+                <img
+                  src="imagenes/phoenix.webp"
+                  alt="Galeria Noticias"
+                  class="img-fluid rounded"
+                />
+                <p class="lead card-text texto-encima">
+                  Un día inolvidable con esta gran banda
+                </p>
+              </div>
+              <div class="imagen-adentro col-lg-6 col-md-6 col-sm-12">
+                <img
+                  src="imagenes/interpol.jpg"
+                  alt="Galeria Noticias"
+                  class="img-fluid rounded"
+                />
+                <p class="lead card-text texto-encima">Historia de Interpol</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Album del dia -->
+      <section id="album-dia" class="border-bottom pb-5">
+        <div class="container-fluid contenedor-disco">
+          <div class="titulo-album text-center pt-5">
+            <h2>Álbum del día - AM</h2>
+          </div>
+          <!-- "ROW" Esta clase modifica el tamaño del contenido dependiendo de los que se tenga adentro -->
+          <div class="albumes row pt-4 justify-content-between">
+            <!-- Columnas para pantallas grandes que midan 6 espacios, recordemos que tenemos hasta 12 espacios disponibles por columna -->
+            <div class="album text-center pb-4">
+              <img
+                src="imagenes/_AM__(Arctic_Monkeys).jpg"
+                alt="Galeria Noticias"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="playlist text-center">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/78bpIziExqiI9qztvNFlQu?utm_source=generator" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Siguenos -->
+      <section id="siguenos" class="container-fluid pt-5 pb-5">
+        <h5 class="text-center">
+          ¡Suscríbete y entérate de
+          <br />
+          las fechas de conciertos y entradas!
+        </h5>
+
+        <div class="row">
+          <div class="formato-escribenos col-lg-4 mx-auto pt-3">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Ingresa tu correo aquí*"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Nunca compartiremos tu información con nadie más.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="section1 border-bottom">
+        <div class="container py-2">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="gira/gira.html">GIRA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="artistas/artistas.html"
+                >ARTISTAS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="musica/musica.html"
+                >MÚSICA / VIDEOS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="contacto/contacto.html"
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="container py-2">
+          <p class="text-center text-muted">© 2022 Dante, Inc</p>
+        </div>
+      </section>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Esta libreria permite que funcione el stop de la animacion de las burbujas -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Archivo Java -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+
+.logo{
+    background: #212529;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h5{
+    color: #fff;
+}
+
+
+/* ************** MAIN ******************** */
+main{
+    /* background: #424242; */
+    background: #212529;
+}
+
+.historia-disco{
+    text-align: justify;
+    font-size: 20px;;
+}
+
+.contenedor-disco h2{
+    text-decoration: underline overline;
+}
+
+.contenedor-disco{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imagen-disco{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-disco img{
+    height: 400px;
+    border-radius: 0.5em;
+}
+
+.titulo-main h1{
+    text-decoration: underline overline;
+    font-size: 45px;
+    padding-top: 1rem;;
+}
+
+.titulo-exitos h1{
+    text-decoration: underline overline;
+    font-size: 45px;
+}
+
+
+.titulo-video{
+    text-decoration: underline overline;
+    font-size: 25px;
+}
+
+.video1{
+    padding-top: 2rem;
+}
+
+.video2{
+    padding: 4rem 0;
+}
+
+
+
+
+
+  
+
+/* ************************* FOOTER ************************* */
+footer{
+    /* background: #424242; */
+    background: #212529; 
+}
+
+/* ******************* Media Queries *************************************/
+/* Not aplica */
+@media screen and (max-width: 1400px){
+}
+
+/* No aplica */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    
+}
+
+/* No aplica */
+@media (min-width: 992px) and (max-width: 1199px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    /* MAIN */
+    .contenedor-disco{
+        padding-bottom: 2rem;
+    }    
+
+    .historia-disco{
+        font-size: 20px;;
+    }
+
+    .imagen-disco img{
+        width: 55%;
+        height: 350px;
+    }
+
+    .video2{
+        padding: 3rem 0;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px){
+    /* MAIN */
+    .contenedor-disco{
+        padding-bottom: 2rem;
+    } 
+
+    .imagen-disco img{
+        width: 70%;
+        margin: 0 auto;
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px){
+    /* MAIN */
+    .contenedor-disco{
+        padding-bottom: 2rem;
+    } 
+
+    .imagen-disco img{
+        width: 80%;
+        margin: 0 auto;
+        height: 250px;
+    }
+}
