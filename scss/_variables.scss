@@ -23,8 +23,6 @@ $color3: #4a354f;
 $color4: #d20076;
 $color5: #ff0076;
 
-
-
 /* Tamaños Bubbles */
 $small: 4rem;
 $medium: 5rem;
@@ -34,3 +32,10 @@ $xxlarge: 8rem;
 $medium-navy: #86a0bb;
 $snow: #f6f9fc;
 $margin: 1rem;
+
+/* Maps */
+$circle-bubble: (
+    background-image: url(../artistas/imagenes/thekillers2019.jpg),
+    height: $xlarge,
+    width: $xlarge,
+);
