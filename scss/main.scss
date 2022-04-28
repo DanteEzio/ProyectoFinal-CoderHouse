@@ -280,11 +280,11 @@ main {
             height: 300px;
             
             /* Aqui ingresamos la animacion de cambio de color Neon */
-            @include coloresNeon;
+            // @include coloresNeon;
 
-            &:hover {
-              transform: scale(1.1);
-            }
+            // &:hover {
+            //   transform: scale(1.1);
+            // }
 
             cursor: pointer;
           }
@@ -295,7 +295,7 @@ main {
             width: 50%;
 
             /* Aqui ingresamos la animacion de cambio de color Neon */
-            @include coloresNeon;
+            // @include coloresNeon;
 
           }
         }
@@ -314,7 +314,7 @@ main {
             width: 100%;
             border: none;
             /* cambio de colores */
-            @include coloresBoton;
+            // @include coloresBoton;
 
             &:hover {
               box-shadow: 0px 0px 15px 1px rgba(188, 228, 42, 0.616);
