@@ -343,8 +343,8 @@ main #siguenos {
 }
 main #siguenos .row .formato-escribenos form button {
   width: 100%;
-  border: none;
-  /* cambio de colores */
+  border-color: white;
+  background: rgba(67, 68, 30, 0.726);
 }
 main #siguenos .row .formato-escribenos form button:hover {
   box-shadow: 0px 0px 15px 1px rgba(188, 228, 42, 0.616);
