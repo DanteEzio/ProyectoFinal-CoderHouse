@@ -29,7 +29,7 @@ main {
   background-color: $dark;
 
   #informacion-portada {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(../imagenes/fotoPortada5.jpg);
     background-position: center 100%;
     background-repeat: no-repeat;
@@ -67,92 +67,108 @@ main {
             max-width: 100%;
             height: auto;
 
-            .bubble-item {
-              background-size: cover;
-              background-position: center center;
-              border-radius: 100%;
-              float: left;
-              height: $small;
-              overflow: hidden;
-              width: $small;
-              margin: $margin;
-              transition: all 250ms ease-in-out;
+            div {
+              /* Aqui estamos llamando a la funcion que pondra nuestro texto en la parte de arriba del contenedor, este ya tiene background y color de letra */
+              @include textoArriba;
 
-              /* Aqui incluimos la funcion que cambia de color durante 15 segundos el borde y sombra de la caja */
-              @include coloresNeon;
+              p {
+                visibility: hidden;
+              }
 
               &:hover {
-                transform: scale(1.1);
+                p {
+                  visibility: visible;
+                }
               }
-            }
+              /* Aqui termina la primera animación de texto encima */
 
-            .item1 {
-              background-image: url(../artistas/imagenes/thekillers2019.jpg);
-              height: $xlarge;
-              width: $xlarge;
-            }
+              .bubble-item {
+                background-size: cover;
+                background-position: center center;
+                border-radius: 100%;
+                float: left;
+                height: $small;
+                overflow: hidden;
+                width: $small;
+                margin: $margin;
+                transition: all 250ms ease-in-out;
 
-            .item2 {
-              background-image: url(../artistas/imagenes/radiohead.webp);
-              height: $large;
-              width: $large;
-            }
+                /* Aqui incluimos la funcion que cambia de color durante 15 segundos el borde y sombra de la caja */
+                @include coloresNeon;
 
-            .item3 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/phoenix.webp);
-            }
+                // &:hover {
+                //   transform: scale(1.1);
+                // }
+              }
 
-            .item4 {
-              background-image: url(../artistas/imagenes/interpol.jpg);
-              height: $xxlarge;
-              width: $xxlarge;
-            }
+              .item1 {
+                background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                height: $xlarge;
+                width: $xlarge;
+              }
 
-            .item5 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/keane.webp);
-            }
+              .item2 {
+                background-image: url(../artistas/imagenes/radiohead.webp);
+                height: $large;
+                width: $large;
+              }
 
-            .item6 {
-              @extend .item2;
-              background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-            }
+              .item3 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/phoenix.webp);
+              }
 
-            .item7 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/coldplay.jpeg);
-            }
+              .item4 {
+                background-image: url(../artistas/imagenes/interpol.jpg);
+                height: $xxlarge;
+                width: $xxlarge;
+              }
 
-            .item8 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-            }
+              .item5 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/keane.webp);
+              }
 
-            .item9 {
-              @extend .item2;
-              background-image: url(../artistas/imagenes/Block-Party-band.png);
-            }
-            .item10 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-            }
+              .item6 {
+                @extend .item2;
+                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+              }
 
-            .item11 {
-              @extend .item4;
-              background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-            }
-            .item12 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/keane.webp);
-            }
-            .item13 {
-              @extend .item2;
-              background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-            }
-            .item14 {
-              @extend .item1;
-              background-image: url(../artistas/imagenes/The-Kooks.jpg);
+              .item7 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/coldplay.jpeg);
+              }
+
+              .item8 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+              }
+
+              .item9 {
+                @extend .item2;
+                background-image: url(../artistas/imagenes/Block-Party-band.png);
+              }
+              .item10 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+              }
+
+              .item11 {
+                @extend .item4;
+                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+              }
+              .item12 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/the-xx.jpg);
+              }
+              .item13 {
+                @extend .item2;
+                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+              }
+              .item14 {
+                @extend .item1;
+                background-image: url(../artistas/imagenes/The-Kooks.jpg);
+              }
             }
           }
         }
@@ -327,84 +343,86 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $xlarge;
-                width: $xlarge;
-              }
+              div {
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $large;
-                width: $large;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $large;
+                  width: $large;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $xlarge;
-                width: $xlarge;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $xxlarge;
+                  width: $xxlarge;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $large;
-                height: $large;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  width: $large;
+                  height: $large;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $large;
-                width: $large;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $large;
+                  width: $large;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $large;
-                height: $large;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $xlarge;
-                height: $xlarge;
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  width: $xxlarge;
+                  height: $xxlarge;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  width: $large;
+                  height: $large;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
               }
             }
           }
@@ -443,84 +461,86 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $large;
-                width: $large;
-              }
+              div {
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $large;
+                  width: $large;
+                }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $medium;
-                width: $medium;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $medium;
+                  width: $medium;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $large;
-                width: $large;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $large;
+                  width: $large;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $xlarge;
-                width: $xlarge;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $large;
-                height: $large;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  width: $large;
+                  height: $large;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $medium;
-                height: $medium;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  width: $medium;
+                  height: $medium;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $large;
-                height: $large;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  width: $large;
+                  height: $large;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $large;
-                height: $large;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  width: $large;
+                  height: $large;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $medium;
-                width: $medium;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $large;
-                height: $large;
-              }
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $medium;
+                  width: $medium;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  width: $large;
+                  height: $large;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $xlarge;
-                height: $xlarge;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $large;
-                height: $large;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $medium;
-                height: $medium;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $large;
-                height: $large;
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  width: $large;
+                  height: $large;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  width: $medium;
+                  height: $medium;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  width: $large;
+                  height: $large;
+                }
               }
             }
           }
@@ -584,84 +604,86 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $xlarge;
-                width: $xlarge;
-              }
+              div {
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $large;
-                width: $large;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $large;
+                  width: $large;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $xxlarge;
+                  width: $xxlarge;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $large;
-                width: $large;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $large;
+                  width: $large;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $large;
-                width: $large;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $large;
+                  width: $large;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  width: $xxlarge;
+                  height: $xxlarge;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $large;
-                height: $large;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $xlarge;
-                height: $xlarge;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $xlarge;
-                height: $xlarge;
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  width: $large;
+                  height: $large;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  width: $xlarge;
+                  height: $xlarge;
+                }
               }
             }
           }
@@ -712,84 +734,90 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $xlarge;
-                width: $xlarge;
-              }
+              div {
+                // p{
+                //   visibility: visible;
+                // }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $xlarge;
-                width: $xlarge;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $xlarge;
-                width: $xlarge;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $xlarge;
-                height: $xlarge;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $xlarge;
-                height: $xlarge;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $xlarge;
-                height: $xlarge;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
               }
             }
           }
@@ -869,84 +897,90 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+              div {
+                // p{
+                //   visibility: visible;
+                // }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
               }
             }
           }
@@ -1026,84 +1060,90 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+              div {
+                // p{
+                //   visibility: visible;
+                // }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
               }
             }
           }
@@ -1185,84 +1225,90 @@ footer {
           animation: galleryInMotion 5s infinite;
           .gallery__wrapper {
             .gallery-cluster {
-              .item1 {
-                background-image: url(../artistas/imagenes/thekillers2019.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+              div {
+                // p{
+                //   visibility: visible;
+                // }
 
-              .item2 {
-                background-image: url(../artistas/imagenes/radiohead.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item1 {
+                  background-image: url(../artistas/imagenes/thekillers2019.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item3 {
-                background-image: url(../artistas/imagenes/phoenix.webp);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item2 {
+                  background-image: url(../artistas/imagenes/radiohead.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item4 {
-                background-image: url(../artistas/imagenes/interpol.jpg);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
+                .item3 {
+                  background-image: url(../artistas/imagenes/phoenix.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item5 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item4 {
+                  background-image: url(../artistas/imagenes/interpol.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item6 {
-                background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item5 {
+                  background-image: url(../artistas/imagenes/keane.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item7 {
-                background-image: url(../artistas/imagenes/coldplay.jpeg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item6 {
+                  background-image: url(../artistas/imagenes/franz-ferdinand-billy-goodbye.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item8 {
-                background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item7 {
+                  background-image: url(../artistas/imagenes/coldplay.jpeg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item9 {
-                background-image: url(../artistas/imagenes/Block-Party-band.png);
-                height: $xxlarge;
-                width: $xxlarge;
-              }
-              .item10 {
-                background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
+                .item8 {
+                  background-image: url(../artistas/imagenes/arcade-fire-2021.webp);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
 
-              .item11 {
-                background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item12 {
-                background-image: url(../artistas/imagenes/keane.webp);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item13 {
-                background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
-              }
-              .item14 {
-                background-image: url(../artistas/imagenes/The-Kooks.jpg);
-                width: $xxlarge;
-                height: $xxlarge;
+                .item9 {
+                  background-image: url(../artistas/imagenes/Block-Party-band.png);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item10 {
+                  background-image: url(../artistas/imagenes/arctic-monkeys.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+
+                .item11 {
+                  background-image: url(../artistas/imagenes/Red-Hot-Chili-Peppers.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item12 {
+                  background-image: url(../artistas/imagenes/the-xx.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item13 {
+                  background-image: url(../artistas/imagenes/SnowPatrol_FbsfXrI.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
+                .item14 {
+                  background-image: url(../artistas/imagenes/The-Kooks.jpg);
+                  height: $xlarge;
+                  width: $xlarge;
+                }
               }
             }
           }
