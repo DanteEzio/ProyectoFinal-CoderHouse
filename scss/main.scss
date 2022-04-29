@@ -29,12 +29,12 @@ main {
   background-color: $dark;
 
   #informacion-portada {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fotoPortada5.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../imagenes/fotoPortada5.jpg);
     background-position: center 100%;
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
-    
 
     .portada {
       text-align: justify;
@@ -437,7 +437,6 @@ footer {
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
   main {
-
     #collage {
       .gallery {
         .wrapper {
@@ -579,7 +578,6 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   main {
-
     #collage {
       .gallery {
         .wrapper {
@@ -708,7 +706,6 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991px) {
   main {
-
     #collage {
       .gallery {
         .wrapper {
@@ -849,6 +846,22 @@ footer {
 
 @media (min-width: 576px) and (max-width: 767px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 0;
+        p {
+          display: none;
+        }
+
+        h4 {
+          text-align: center;
+          font-size: 30px;
+          align-items: center;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+        }
+      }
+    }
 
     #collage {
       .gallery {
@@ -990,6 +1003,22 @@ footer {
 
 @media (min-width: 430px) and (max-width: 575px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 0;
+        p {
+          display: none;
+        }
+
+        h4 {
+          text-align: center;
+          font-size: 30px;
+          align-items: center;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+      }
+    }
 
     #collage {
       .gallery {
@@ -1133,6 +1162,22 @@ footer {
 
 @media (max-width: 429px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 0;
+        p {
+          display: none;
+        }
+
+        h4 {
+          text-align: center;
+          font-size: 30px;
+          align-items: center;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+      }
+    }
 
     #collage {
       .gallery {
