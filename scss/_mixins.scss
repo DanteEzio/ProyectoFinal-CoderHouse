@@ -4,35 +4,35 @@
 
   @keyframes collage {
     0% {
-      box-shadow: 0px 0px 15px $verdeN;
+      box-shadow: 0px 0px 15px map-get($coloresNeon, verdeN);
     }
     25% {
-      box-shadow: 0px 0px 15px $rojoN;
+      box-shadow: 0px 0px 15px map-get($coloresNeon, rojoN);
     }
     50% {
-      box-shadow: 0px 0px 15px $moradoN;
+      box-shadow: 0px 0px 15px map-get($coloresNeon, moradoN);
     }
     75% {
-      box-shadow: 0px 0px 15px $azulN;
+      box-shadow: 0px 0px 15px map-get($coloresNeon, azulN);
     }
     100% {
-      box-shadow: 0px 0px 15px $amarilloN;
+      box-shadow: 0px 0px 15px map-get($coloresNeon, amarilloN);
     }
 
     0% {
-      border: 3px solid $verdeN;
+      border: 3px solid map-get($coloresNeon, verdeN);
     }
     25% {
-      border: 3px solid $rojoN;
+      border: 3px solid map-get($coloresNeon, rojoN);
     }
     50% {
-      border: 3px solid $moradoN;
+      border: 3px solid map-get($coloresNeon, moradoN);
     }
     75% {
-      border: 3px solid $azulN;
+      border: 3px solid map-get($coloresNeon, azulN);
     }
     100% {
-      border: 3px solid $amarilloN;
+      border: 3px solid map-get($coloresNeon, amarilloN);
     }
   }
 }

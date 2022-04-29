@@ -10,11 +10,14 @@ $gris-3: #828282;
 $gris-4: #aaaaaa;
 
 //Paleta de colores - 2 (Neon)
-$verdeN: #93da49;
-$rojoN: #fe575f;
-$moradoN: #c237db;
-$azulN: #40f2fe;
-$amarilloN: #faed27;
+/* Maps */
+$coloresNeon: (
+    verdeN: #93da49,
+    rojoN: #fe575f,
+    moradoN: #c237db,
+    azulN: #40f2fe,
+    amarilloN: #faed27
+);
 
 //Paleta de colores - 3 (Album-día)
 $color1: #903495;
@@ -33,9 +36,4 @@ $medium-navy: #86a0bb;
 $snow: #f6f9fc;
 $margin: 1rem;
 
-/* Maps */
-$circle-bubble: (
-    background-image: url(../artistas/imagenes/thekillers2019.jpg),
-    height: $xlarge,
-    width: $xlarge,
-);
+
