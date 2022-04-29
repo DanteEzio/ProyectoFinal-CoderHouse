@@ -34,9 +34,8 @@ main {
     height: 100%;
     background-size: cover;
 
-
     .portada {
-      background-color: #00000086;
+      background-color: #00000099;
       text-align: justify;
       padding: 40px 20px 60px 130px;
     }
@@ -261,7 +260,7 @@ main {
         .album {
           img {
             height: 300px;
-            
+
             /* Aqui ingresamos la animacion de cambio de color Neon */
             // @include coloresNeon;
 
@@ -279,7 +278,6 @@ main {
 
             /* Aqui ingresamos la animacion de cambio de color Neon */
             // @include coloresNeon;
-
           }
         }
       }
@@ -321,6 +319,11 @@ footer {
 /* No aplica */
 @media screen and (max-width: 1400px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 20px 60px 60px;
+      }
+    }
     #collage {
       .gallery {
         .wrapper {
@@ -431,14 +434,18 @@ footer {
         }
       }
     }
-
-  
   }
 }
 
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 50px 60px 50px;
+      }
+    }
+
     #collage {
       .gallery {
         .wrapper {
@@ -580,6 +587,12 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 40px 60px 40px;
+      }
+    }
+
     #collage {
       .gallery {
         .wrapper {
@@ -708,6 +721,12 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 40px 60px 40px;
+      }
+    }
+
     #collage {
       .gallery {
         .wrapper {
@@ -840,7 +859,7 @@ footer {
       }
     }
 
-    #siguenos{
+    #siguenos {
       width: 70%;
     }
   }
@@ -848,6 +867,12 @@ footer {
 
 @media (min-width: 576px) and (max-width: 767px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 30px 60px 30px;
+      }
+    }
+
     #collage {
       .gallery {
         .wrapper {
@@ -980,7 +1005,7 @@ footer {
       }
     }
 
-    #siguenos{
+    #siguenos {
       width: 70%;
     }
   }
@@ -988,6 +1013,12 @@ footer {
 
 @media (min-width: 430px) and (max-width: 575px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 20px 60px 20px;
+      }
+    }
+
     #collage {
       .gallery {
         .wrapper {
@@ -1122,7 +1153,7 @@ footer {
       }
     }
 
-    #siguenos{
+    #siguenos {
       width: 90%;
     }
   }
@@ -1130,6 +1161,12 @@ footer {
 
 @media (max-width: 429px) {
   main {
+    #informacion-portada {
+      .portada {
+        padding: 40px 15px 60px 15px;
+      }
+    }
+
     #collage {
       .gallery {
         .wrapper {
@@ -1270,7 +1307,7 @@ footer {
       }
     }
 
-    #siguenos{
+    #siguenos {
       width: 90%;
     }
   }

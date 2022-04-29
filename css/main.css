@@ -40,7 +40,7 @@ main #informacion-portada {
   background-size: cover;
 }
 main #informacion-portada .portada {
-  background-color: rgba(0, 0, 0, 0.5254901961);
+  background-color: rgba(0, 0, 0, 0.6);
   text-align: justify;
   padding: 40px 20px 60px 130px;
 }
@@ -333,6 +333,9 @@ footer {
 /* ******************* Media Queries *************************************/
 /* No aplica */
 @media screen and (max-width: 1400px) {
+  main #informacion-portada .portada {
+    padding: 40px 20px 60px 60px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -418,6 +421,9 @@ footer {
 }
 /* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  main #informacion-portada .portada {
+    padding: 40px 50px 60px 50px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -516,6 +522,9 @@ footer {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  main #informacion-portada .portada {
+    padding: 40px 40px 60px 40px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -611,6 +620,9 @@ footer {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  main #informacion-portada .portada {
+    padding: 40px 40px 60px 40px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -709,6 +721,9 @@ footer {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  main #informacion-portada .portada {
+    padding: 40px 30px 60px 30px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -807,6 +822,9 @@ footer {
   }
 }
 @media (min-width: 430px) and (max-width: 575px) {
+  main #informacion-portada .portada {
+    padding: 40px 20px 60px 20px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -907,6 +925,9 @@ footer {
   }
 }
 @media (max-width: 429px) {
+  main #informacion-portada .portada {
+    padding: 40px 15px 60px 15px;
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
