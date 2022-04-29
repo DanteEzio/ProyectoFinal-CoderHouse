@@ -34,6 +34,7 @@ main {
   color: #fff;
   background-color: #212529;
   /* Aqui empieza la página Gira */
+  /* Aqui empieza la página Artistas */
   /* Aqui empieza la página Contacto */
 }
 main #informacion-portada {
@@ -372,6 +373,103 @@ main #tabla .interior .boton button:hover {
   transition: background-color 1s ease-out;
   outline: 0;
 }
+main #artistas .container .noticias .noticia {
+  height: 600px;
+  position: relative;
+  display: inline-block;
+  text-align: justify;
+  padding: 10px;
+  cursor: pointer;
+}
+main #artistas .container .noticias .noticia .texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translate(-5.5%, 0%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: 100;
+  padding: 20px;
+}
+main #artistas .container .noticias .noticia img {
+  width: 100%;
+  height: 100%;
+}
+main #artistas .container .noticias .noticia img:hover {
+  box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
+}
+main #artistas .container .noticias .adentro .row .imagen-adentro {
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  font-weight: 100;
+}
+main #artistas .container .noticias .adentro .row .imagen-adentro p {
+  animation-name: texto-ocultar;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes texto-ocultar {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main #artistas .container .noticias .adentro .row .imagen-adentro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: img-distorcionada;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+@keyframes img-distorcionada {
+  0% {
+    filter: grayscale(70%);
+  }
+  25% {
+    filter: grayscale(0%);
+  }
+  50% {
+    filter: grayscale(70%);
+  }
+  75% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(70%);
+  }
+}
+main #artistas .container .noticias .adentro .row .imagen-adentro img:hover {
+  box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
+}
 main #contenedor-formulario .formulario .envoltura {
   width: 70%;
   margin: 0 auto;
@@ -503,6 +601,7 @@ footer {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   main {
+    /* Aqui empieza la página Artistas */
     /* Aqui empieza la página Contacto */
   }
   main #collage .gallery .wrapper {
@@ -601,6 +700,23 @@ footer {
   main #album-dia .contenedor-disco .albumes .playlist iframe {
     width: 50%;
   }
+  main #artistas .container .titulo h1 {
+    font-size: 45px;
+  }
+  main #artistas .container .noticias .noticia {
+    height: 600px;
+  }
+  main #artistas .container .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro {
+    height: 200px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    object-fit: cover;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 80%;
     margin: 0 auto;
@@ -608,6 +724,7 @@ footer {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   main {
+    /* Aqui empieza la página Artistas */
     /* Aqui empieza la página Contacto */
   }
   main #collage .gallery .wrapper {
@@ -703,6 +820,23 @@ footer {
   main #galeria .noticias .adentro .row .imagen-adentro p {
     font-size: 22px !important;
   }
+  main #artistas .container .titulo h1 {
+    font-size: 45px;
+  }
+  main #artistas .container .noticias .noticia {
+    height: 1000px;
+  }
+  main #artistas .container .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro {
+    height: 200px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    object-fit: cover;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 95%;
     margin: 0 auto;
@@ -711,6 +845,7 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
   main {
     /* Seccion Gira */
+    /* Aqui empieza la página Artistas */
     /* Aqui empieza la página Contacto */
   }
   main #collage .gallery .wrapper {
@@ -818,6 +953,37 @@ footer {
   main #tabla .interior .boton button {
     font-size: 15px;
   }
+  main #artistas .container .titulo h1 {
+    font-size: 45px;
+  }
+  main #artistas .container .noticias .noticia {
+    height: 350px;
+    position: relative;
+    display: inline-block;
+    text-align: justify;
+  }
+  main #artistas .container .noticias .noticia .texto-encima {
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    transform: translate(-5.5%, 0%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+  }
+  main #artistas .container .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro {
+    height: 300px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    object-fit: cover;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;
     margin: 0 auto;
@@ -825,6 +991,7 @@ footer {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   main {
+    /* Aqui empieza la página Artistas */
     /* Seccion Gira */
     /* Aqui empieza la página Contacto */
   }
@@ -937,6 +1104,40 @@ footer {
   main #siguenos {
     width: 70%;
   }
+  main #artistas .container .titulo h1 {
+    font-size: 45px;
+  }
+  main #artistas .container .noticias .noticia {
+    height: 450px;
+    position: relative;
+    display: inline-block;
+    text-align: justify;
+  }
+  main #artistas .container .noticias .noticia .texto-encima {
+    position: absolute;
+    top: 25%;
+    left: 11%;
+    transform: translate(-5.5%, 0%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+  }
+  main #artistas .container .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro {
+    height: 450px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+    font-size: 40px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    object-fit: cover;
+  }
   main #tabla .interior {
     font-size: 15px;
   }
@@ -955,6 +1156,7 @@ footer {
 @media (min-width: 430px) and (max-width: 575px) {
   main {
     /* Seccion Gira */
+    /* Aqui empieza la página Artistas */
     /* Aqui empieza la página Contacto */
   }
   main #informacion-portada .portada {
@@ -1079,6 +1281,46 @@ footer {
     font-size: 15px;
     padding: 8px 10px;
   }
+  main #artistas .container .titulo h1 {
+    font-size: 45px;
+  }
+  main #artistas .container .noticias .noticia {
+    height: 350px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  main #artistas .container .noticias .noticia .texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+  }
+  main #artistas .container .noticias .noticia .texto-encima h6 {
+    display: none;
+  }
+  main #artistas .container .noticias .noticia .texto-encima h3 {
+    font-size: 35px;
+  }
+  main #artistas .container .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro {
+    height: 350px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+    font-size: 35px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    object-fit: cover;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;
     margin: 0 auto;
@@ -1091,6 +1333,7 @@ footer {
 @media (max-width: 429px) {
   main {
     /* Seccion Gira */
+    /* Aqui empieza la página Artistas */
     /* Aqui empieza la página Contacto */
   }
   main #informacion-portada .portada {
@@ -1218,6 +1461,46 @@ footer {
   main #tabla .interior .boton button {
     font-size: 15px;
     padding: 8px 10px;
+  }
+  main #artistas .container .titulo h1 {
+    font-size: 45px;
+  }
+  main #artistas .container .noticias .noticia {
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  main #artistas .container .noticias .noticia .texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+  }
+  main #artistas .container .noticias .noticia .texto-encima h6 {
+    display: none;
+  }
+  main #artistas .container .noticias .noticia .texto-encima h3 {
+    font-size: 30px;
+  }
+  main #artistas .container .noticias .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro {
+    height: 300px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+    font-size: 30px;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    object-fit: cover;
   }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;

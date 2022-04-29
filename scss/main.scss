@@ -355,6 +355,101 @@ main {
     }
   }
 
+  /* Aqui empieza la página Artistas */
+  #artistas {
+    .container {
+      .noticias {
+        .noticia {
+          height: 600px;
+
+          position: relative;
+          display: inline-block;
+          text-align: justify;
+
+          .texto-encima {
+            position: absolute;
+            top: 50%;
+            left: 11%;
+            transform: translate(-5.5%, 0%);
+            color: $blanco;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 25px;
+            font-weight: 100;
+            padding: 20px;
+          }
+
+          //Animacion para mostrar y ocultar texto
+          // Se le ingresa nombre, duracion, el numero de veces que se repetira
+          // p {
+          //   @include ocultandoTexto;
+          // }
+
+          padding: 10px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            // object-fit: cover;
+
+            // animation-name: img-distorcionada;
+            // animation-duration: 40s;
+            // animation-iteration-count: infinite;
+            // animation-timing-function: linear;
+
+            &:hover {
+              box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
+            }
+          }
+
+          cursor: pointer;
+        }
+
+        .adentro {
+          .row {
+            .imagen-adentro {
+              height: 200px;
+
+              position: relative;
+              display: inline-block;
+              text-align: center;
+
+              .texto-encima {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $blanco;
+                background-color: rgba(0, 0, 0, 0.7);
+                font-size: 20px;
+                font-weight: 100;
+              }
+
+              p {
+                @include ocultandoTexto;
+              }
+
+              padding: 10px;
+              // margin: 0 auto;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                @include imgColor;
+
+                &:hover {
+                  box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
+                }
+              }
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
   /* Aqui empieza la página Contacto */
   #contenedor-formulario {
     .formulario {
@@ -682,6 +777,40 @@ footer {
       }
     }
 
+    /* Aqui empieza la página Artistas */
+    #artistas {
+      .container {
+        .titulo{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .noticias {
+          .noticia {
+            height: 600px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .adentro {
+            .row {
+              .imagen-adentro {
+                height: 200px;
+
+                img {
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     /* Aqui empieza la página Contacto */
     #contenedor-formulario {
       .formulario {
@@ -815,6 +944,40 @@ footer {
 
               p {
                 font-size: 22px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Artistas */
+    #artistas {
+      .container {
+        .titulo{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .noticias {
+          .noticia {
+            height: 1000px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .adentro {
+            .row {
+              .imagen-adentro {
+                height: 200px;
+
+                img {
+                  object-fit: cover;
+                }
               }
             }
           }
@@ -997,6 +1160,56 @@ footer {
       }
     }
 
+    /* Aqui empieza la página Artistas */
+    #artistas {
+      .container {
+        .titulo{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .noticias {
+          .noticia {
+            height: 350px;
+
+            position: relative;
+            display: inline-block;
+            text-align: justify;
+
+            .texto-encima {
+              position: absolute;
+              top: 20%;
+              left: 11%;
+              transform: translate(-5.5%, 0%);
+              color: $blanco;
+              background-color: rgba(0, 0, 0, 0.7);
+              font-size: 25px;
+              font-weight: 100;
+              padding: 20px;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .adentro {
+            .row {
+              .imagen-adentro {
+                height: 300px;
+
+                img {
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     /* Aqui empieza la página Contacto */
     #contenedor-formulario {
       .formulario {
@@ -1168,6 +1381,60 @@ footer {
 
     #siguenos {
       width: 70%;
+    }
+
+    /* Aqui empieza la página Artistas */
+    #artistas {
+      .container {
+        .titulo{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .noticias {
+          .noticia {
+            height: 450px;
+
+            position: relative;
+            display: inline-block;
+            text-align: justify;
+
+            .texto-encima {
+              position: absolute;
+              top: 25%;
+              left: 11%;
+              transform: translate(-5.5%, 0%);
+              color: $blanco;
+              background-color: rgba(0, 0, 0, 0.7);
+              font-size: 25px;
+              font-weight: 100;
+              padding: 20px;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .adentro {
+            .row {
+              .imagen-adentro {
+                height: 450px;
+
+                .texto-encima{
+                  font-size: 40px;
+                }
+
+                img {
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     /* Seccion Gira */
@@ -1386,6 +1653,68 @@ footer {
       }
     }
 
+    /* Aqui empieza la página Artistas */
+    #artistas {
+      .container {
+        .titulo{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .noticias {
+          .noticia {
+            height: 350px;
+
+            position: relative;
+            display: inline-block;
+            text-align: center;
+
+            .texto-encima {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: $blanco;
+              background-color: rgba(0, 0, 0, 0.7);
+              font-size: 25px;
+              font-weight: 100;
+              padding: 20px;
+
+              h6{
+                display: none;
+              }
+
+              h3{
+                font-size: 35px;
+              }
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .adentro {
+            .row {
+              .imagen-adentro {
+                height: 350px;
+
+                .texto-encima{
+                  font-size: 35px;
+                }
+
+                img {
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     /* Aqui empieza la página Contacto */
     #contenedor-formulario {
       .formulario {
@@ -1598,6 +1927,68 @@ footer {
           button {
             font-size: 15px;
             padding: 8px 10px;
+          }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Artistas */
+    #artistas {
+      .container {
+        .titulo{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .noticias {
+          .noticia {
+            height: 300px;
+
+            position: relative;
+            display: inline-block;
+            text-align: center;
+
+            .texto-encima {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: $blanco;
+              background-color: rgba(0, 0, 0, 0.7);
+              font-size: 25px;
+              font-weight: 100;
+              padding: 20px;
+
+              h6{
+                display: none;
+              }
+
+              h3{
+                font-size: 30px;
+              }
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .adentro {
+            .row {
+              .imagen-adentro {
+                height: 300px;
+
+                .texto-encima{
+                  font-size: 30px;
+                }
+
+                img {
+                  object-fit: cover;
+                }
+              }
+            }
           }
         }
       }
