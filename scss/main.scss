@@ -322,6 +322,38 @@ main {
       }
     }
   }
+
+  /* Aqui empieza la página gira */
+  #tabla {
+    .titulo-main {
+      img {
+        width: 150px;
+      }
+    }
+
+    .interior {
+      font-size: 25px;
+      font-weight: 100;
+
+      .boton {
+        button {
+          background: none;
+          color: #fff;
+          border: 1px solid;
+          text-transform: uppercase;
+          padding: 1px 35px;
+          font-size: 20px;
+          font-weight: 100;
+
+          &:hover {
+            background: rgba(67, 68, 30, 0.726);
+            transition: background-color 1s ease-out;
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 //***FOOTER***
@@ -333,7 +365,6 @@ footer {
 
 /* ******************* Media Queries *************************************/
 
-/* No aplica */
 @media screen and (max-width: 1400px) {
   main {
     #collage {
@@ -451,7 +482,6 @@ footer {
   }
 }
 
-/* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
   main {
     #collage {
@@ -868,6 +898,25 @@ footer {
     #siguenos {
       width: 70%;
     }
+
+    /* Seccion Gira */
+    #tabla {
+      .interior {
+        font-size: 20px;
+      }
+
+      .titulo-tabla {
+        font-size: 25px;
+      }
+
+      .interior {
+        .boton {
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1030,6 +1079,26 @@ footer {
 
     #siguenos {
       width: 70%;
+    }
+
+    /* Seccion Gira */
+    #tabla {
+      .interior {
+        font-size: 15px;
+      }
+
+      .titulo-tabla {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .interior {
+        .boton {
+          button {
+            font-size: 13px;
+          }
+        }
+      }
     }
   }
 }
@@ -1195,6 +1264,27 @@ footer {
 
     #siguenos {
       width: 90%;
+    }
+
+    /* Seccion Gira */
+    #tabla {
+      .interior {
+        font-size: 16px;
+      }
+
+      .titulo-tabla {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .interior {
+        .boton {
+          button {
+            font-size: 15px;
+            padding: 8px 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -1366,6 +1456,27 @@ footer {
 
     #siguenos {
       width: 90%;
+    }
+
+    /* Seccion Gira */
+    #tabla {
+      .interior {
+        font-size: 16px;
+      }
+
+      .titulo-tabla {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .interior {
+        .boton {
+          button {
+            font-size: 15px;
+            padding: 8px 10px;
+          }
+        }
+      }
     }
   }
 }

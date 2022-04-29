@@ -33,6 +33,7 @@ header .logo h5 {
 main {
   color: #fff;
   background-color: #212529;
+  /* Aqui empieza la página gira */
 }
 main #informacion-portada {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imagenes/fotoPortada5.jpg);
@@ -349,13 +350,33 @@ main #siguenos .row .formato-escribenos form button {
 main #siguenos .row .formato-escribenos form button:hover {
   box-shadow: 0px 0px 15px 1px rgba(188, 228, 42, 0.616);
 }
+main #tabla .titulo-main img {
+  width: 150px;
+}
+main #tabla .interior {
+  font-size: 25px;
+  font-weight: 100;
+}
+main #tabla .interior .boton button {
+  background: none;
+  color: #fff;
+  border: 1px solid;
+  text-transform: uppercase;
+  padding: 1px 35px;
+  font-size: 20px;
+  font-weight: 100;
+}
+main #tabla .interior .boton button:hover {
+  background: rgba(67, 68, 30, 0.726);
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
 
 footer {
   background-color: #212529;
 }
 
 /* ******************* Media Queries *************************************/
-/* No aplica */
 @media screen and (max-width: 1400px) {
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
@@ -440,7 +461,6 @@ footer {
     width: 50%;
   }
 }
-/* No aplica */
 @media (min-width: 1200px) and (max-width: 1399px) {
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
@@ -635,6 +655,9 @@ footer {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  main {
+    /* Seccion Gira */
+  }
   main #collage .gallery .wrapper {
     animation: galleryInMotion 5s infinite;
   }
@@ -731,8 +754,20 @@ footer {
   main #siguenos {
     width: 70%;
   }
+  main #tabla .interior {
+    font-size: 20px;
+  }
+  main #tabla .titulo-tabla {
+    font-size: 25px;
+  }
+  main #tabla .interior .boton button {
+    font-size: 15px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  main {
+    /* Seccion Gira */
+  }
   main #informacion-portada .portada {
     padding: 0;
   }
@@ -842,8 +877,21 @@ footer {
   main #siguenos {
     width: 70%;
   }
+  main #tabla .interior {
+    font-size: 15px;
+  }
+  main #tabla .titulo-tabla {
+    font-size: 25px;
+    text-align: center;
+  }
+  main #tabla .interior .boton button {
+    font-size: 13px;
+  }
 }
 @media (min-width: 430px) and (max-width: 575px) {
+  main {
+    /* Seccion Gira */
+  }
   main #informacion-portada .portada {
     padding: 0;
   }
@@ -955,8 +1003,22 @@ footer {
   main #siguenos {
     width: 90%;
   }
+  main #tabla .interior {
+    font-size: 16px;
+  }
+  main #tabla .titulo-tabla {
+    font-size: 18px;
+    text-align: center;
+  }
+  main #tabla .interior .boton button {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
 }
 @media (max-width: 429px) {
+  main {
+    /* Seccion Gira */
+  }
   main #informacion-portada .portada {
     padding: 0;
   }
@@ -1071,6 +1133,17 @@ footer {
   }
   main #siguenos {
     width: 90%;
+  }
+  main #tabla .interior {
+    font-size: 16px;
+  }
+  main #tabla .titulo-tabla {
+    font-size: 18px;
+    text-align: center;
+  }
+  main #tabla .interior .boton button {
+    font-size: 15px;
+    padding: 8px 10px;
   }
 }
 
