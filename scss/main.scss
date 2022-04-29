@@ -323,7 +323,7 @@ main {
     }
   }
 
-  /* Aqui empieza la página gira */
+  /* Aqui empieza la página Gira */
   #tabla {
     .titulo-main {
       img {
@@ -349,6 +349,65 @@ main {
             background: rgba(67, 68, 30, 0.726);
             transition: background-color 1s ease-out;
             outline: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* Aqui empieza la página Contacto */
+  #contenedor-formulario {
+    .formulario {
+      .envoltura {
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 0 0 20px 0 rgba(182, 181, 122, 0.726);
+        // padding: 1em;
+
+        .formato-contacto {
+          background: rgba(67, 68, 30, 0.726);
+
+          form {
+            .row {
+              .botones {
+                display: flex;
+                justify-content: space-around;
+
+                .boton {
+                  button {
+                    background: #b70e21;
+                    color: #fff;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1em;
+                    width: 200px;
+                    margin: 0 auto;
+
+                    &:hover {
+                      background: #d63031;
+                      color: rgb(44, 44, 26);
+                      transition: background-color 1s ease-out;
+                      outline: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .contact-info {
+          background: #212529;
+          text-align: center;
+
+          ul {
+            list-style: none;
+            padding: 2em 0;
+            font-size: 12px;
+          }
+
+          .texto-2 {
+            padding-top: 2em;
           }
         }
       }
@@ -622,6 +681,16 @@ footer {
         }
       }
     }
+
+    /* Aqui empieza la página Contacto */
+    #contenedor-formulario {
+      .formulario {
+        .envoltura {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }
 
@@ -749,6 +818,16 @@ footer {
               }
             }
           }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Contacto */
+    #contenedor-formulario {
+      .formulario {
+        .envoltura {
+          width: 95%;
+          margin: 0 auto;
         }
       }
     }
@@ -914,6 +993,16 @@ footer {
           button {
             font-size: 15px;
           }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Contacto */
+    #contenedor-formulario {
+      .formulario {
+        .envoltura {
+          width: 100%;
+          margin: 0 auto;
         }
       }
     }
@@ -1100,6 +1189,16 @@ footer {
         }
       }
     }
+
+    /* Aqui empieza la página Contacto */
+    #contenedor-formulario {
+      .formulario {
+        .envoltura {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }
 
@@ -1282,6 +1381,31 @@ footer {
           button {
             font-size: 15px;
             padding: 8px 10px;
+          }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Contacto */
+    #contenedor-formulario {
+      .formulario {
+        .envoltura {
+          width: 100%;
+          margin: 0 auto;
+
+          .formato-contacto {
+            form {
+              .row {
+                .botones {
+                  .boton {
+                    button {
+                      width: 100px;
+                      margin: 0 auto;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1474,6 +1598,31 @@ footer {
           button {
             font-size: 15px;
             padding: 8px 10px;
+          }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Contacto */
+    #contenedor-formulario {
+      .formulario {
+        .envoltura {
+          width: 100%;
+          margin: 0 auto;
+
+          .formato-contacto {
+            form {
+              .row {
+                .botones {
+                  .boton {
+                    button {
+                      width: 100px;
+                      margin: 0 auto;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
