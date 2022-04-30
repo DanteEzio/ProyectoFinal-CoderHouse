@@ -35,6 +35,7 @@ main {
   background-color: #212529;
   /* Aqui empieza la página Gira */
   /* Aqui empieza la página Artistas */
+  /* Aqui empieza la página Musica/Videos */
   /* Aqui empieza la página Contacto */
 }
 main #informacion-portada {
@@ -470,6 +471,29 @@ main #artistas .container .noticias .adentro .row .imagen-adentro img {
 main #artistas .container .noticias .adentro .row .imagen-adentro img:hover {
   box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
 }
+main #disco .container .contenedor-disco {
+  width: 90%;
+  margin: 0 auto;
+}
+main #disco .container .contenedor-disco .row .historia-disco {
+  text-align: justify;
+  font-size: 20px;
+}
+main #disco .container .contenedor-disco .row .imagen-disco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #disco .container .contenedor-disco .row .imagen-disco img {
+  height: 400px;
+  border-radius: 0.5em;
+}
+main #disco .container .titulo-exitos h1 {
+  font-size: 45px;
+}
+main #disco .container .videos {
+  font-size: 25px;
+}
 main #contenedor-formulario .formulario .envoltura {
   width: 70%;
   margin: 0 auto;
@@ -846,6 +870,7 @@ footer {
   main {
     /* Seccion Gira */
     /* Aqui empieza la página Artistas */
+    /* Aqui empieza la página Musica/Videos */
     /* Aqui empieza la página Contacto */
   }
   main #collage .gallery .wrapper {
@@ -984,6 +1009,9 @@ footer {
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
     object-fit: cover;
   }
+  main #disco .container .contenedor-disco {
+    padding-bottom: 2rem;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;
     margin: 0 auto;
@@ -993,6 +1021,7 @@ footer {
   main {
     /* Aqui empieza la página Artistas */
     /* Seccion Gira */
+    /* Aqui empieza la página Musica/Videos */
     /* Aqui empieza la página Contacto */
   }
   main #informacion-portada .portada {
@@ -1148,6 +1177,9 @@ footer {
   main #tabla .interior .boton button {
     font-size: 13px;
   }
+  main #disco .container .contenedor-disco {
+    padding-bottom: 2rem;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;
     margin: 0 auto;
@@ -1157,6 +1189,7 @@ footer {
   main {
     /* Seccion Gira */
     /* Aqui empieza la página Artistas */
+    /* Aqui empieza la página Musica/Videos */
     /* Aqui empieza la página Contacto */
   }
   main #informacion-portada .portada {
@@ -1321,6 +1354,14 @@ footer {
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
     object-fit: cover;
   }
+  main #disco .container .contenedor-disco {
+    padding-bottom: 2rem;
+  }
+  main #disco .container .contenedor-disco .row .imagen-disco img {
+    width: 70%;
+    margin: 0 auto;
+    height: 250px;
+  }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;
     margin: 0 auto;
@@ -1334,6 +1375,7 @@ footer {
   main {
     /* Seccion Gira */
     /* Aqui empieza la página Artistas */
+    /* Aqui empieza la página Musica/Videos */
     /* Aqui empieza la página Contacto */
   }
   main #informacion-portada .portada {
@@ -1501,6 +1543,14 @@ footer {
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
     object-fit: cover;
+  }
+  main #disco .container .contenedor-disco {
+    padding-bottom: 2rem;
+  }
+  main #disco .container .contenedor-disco .row .imagen-disco img {
+    width: 70%;
+    margin: 0 auto;
+    height: 200px;
   }
   main #contenedor-formulario .formulario .envoltura {
     width: 100%;
