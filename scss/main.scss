@@ -6,21 +6,37 @@
 //***Header***
 header {
   //   background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
+  
   background-color: $dark;
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: $light;
+  border-bottom: 4px solid $danger;
 
-    h5 {
-      color: $blanco;
+  nav{
+    .container{
+      .menu{
+        .navbar-collapse{
+          ul{
+            li{
+              a{
+                font-size: 20px;
+
+                &:hover{
+                  color: $danger;
+                }
+                
+              }
+              .active{
+                color: $danger;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
     }
   }
+  
 }
-
-/*nav {
-  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
-}*/
 
 //***Main***
 main {
@@ -1525,6 +1541,7 @@ footer {
 }
 
 @media (min-width: 430px) and (max-width: 575px) {
+
   main {
     #informacion-portada {
       .portada {
@@ -1817,6 +1834,20 @@ footer {
 }
 
 @media (max-width: 429px) {
+  header{
+    nav{
+      .container{
+        .logo{
+          a{
+            img{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
   main {
     #informacion-portada {
       .portada {

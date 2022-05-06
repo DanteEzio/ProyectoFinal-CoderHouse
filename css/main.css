@@ -17,19 +17,20 @@ al ancho de la pantalla, se regrese*/
 /* Esta función nos permite poner texto arriba */
 header {
   background-color: #212529;
+  color: #f8f9fa;
+  border-bottom: 4px solid #dc3545;
 }
-header .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header nav .container .menu .navbar-collapse ul li a {
+  font-size: 20px;
 }
-header .logo h5 {
-  color: #fff;
+header nav .container .menu .navbar-collapse ul li a:hover {
+  color: #dc3545;
+}
+header nav .container .menu .navbar-collapse ul li .active {
+  color: #dc3545;
+  font-weight: bold;
 }
 
-/*nav {
-  background: linear-gradient(90deg, rgb(163, 44, 69), rgb(20, 16, 16));
-}*/
 main {
   color: #fff;
   background-color: #212529;
@@ -102,7 +103,7 @@ main #collage .gallery .wrapper .gallery__wrapper .gallery-cluster div .texto-en
   left: 50%;
   transform: translate(-50%, -260%);
   color: #fff;
-  background-color: rgb(219, 32, 32);
+  background-color: #EE445F;
   border-radius: 1em;
   font-size: 14px;
   font-weight: 100;
@@ -1372,6 +1373,10 @@ footer {
   }
 }
 @media (max-width: 429px) {
+  header nav .container .logo a img {
+    display: none;
+  }
+
   main {
     /* Seccion Gira */
     /* Aqui empieza la página Artistas */

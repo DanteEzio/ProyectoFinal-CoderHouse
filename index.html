@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UrSpace</title>
     <!-- Palabras Clave -->
-    <meta name="keywords" content="HTML, SCSS, UrSpace, Inicio, UrSpace pagina de inicio, musica indie, artistas de musica indie" />
+    <meta
+      name="keywords"
+      content="HTML, SCSS, UrSpace, Inicio, UrSpace pagina de inicio, musica indie, artistas de musica indie"
+    />
     <!-- Descripcion -->
-    <meta name="description" content="Aqui encontraras un pequeño resumen del viaje musical que encontraras en nuestra pagina" />
+    <meta
+      name="description"
+      content="Aqui encontraras un pequeño resumen del viaje musical que encontraras en nuestra pagina"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- <link rel="stylesheet" href="index.css" /> -->
@@ -29,66 +35,84 @@
   <!-- BODY -->
   <body>
     <!-- HEADER -->
-    <header>
-      <!-- Logo -->
-      <div class="logo border-bottom">
-        <a class="navbar-brand" href="index.html">
-          <img src="imagenes/logoHeader.svg" alt="" style="width: 70px" />
-        </a>
-        <h5>Ur-Space</h5>
-      </div>
-    </header>
-
-    <!-- NavBar -->
-    <nav
-      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-2 border-bottom"
-    >
-      <div class="container">
-        <div class="division">
-          <button
-            class="navbar-toggler mb-3 mt-3"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Pestañas NAVBAR -->
-          <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav my-auto mb-2 mb-lg-0 h5">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >INICIO</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gira/gira.html">GIRA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="artistas/artistas.html">ARTISTAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="musica/musica.html"
-                  >MÚSICA / VIDEOS</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto/contacto.html">CONTACTO</a>
-              </li>
-            </ul>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div
+          class="container d-flex align-items-baseline justify-content-between"
+        >
+          <!-- Logo -->
+          <div class="logo order-lg-0 order-md-1 order-sm-1 order-1">
+            <a class="navbar-brand imagen-logo text-light" href="index.html">
+              <img src="imagenes/logoHeader.svg" alt="" style="width: 60px" />
+              Ur-<span class="text-danger">Space</span>
+            </a>
+          </div>
+          <!-- Pestañas -->
+          <div class="menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >INICIO</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="artistas/artistas.html"
+                    >ARTISTAS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="musica/musica.html"
+                    >MÚSICA/VIDEOS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="gira/gira.html"
+                    >GIRAS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="contacto/contacto.html"
+                    >CONTACTO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Iconos -->
+          <div class="navbar-icons h4 order-lg-2 order-md-2 order-sm-2 order-2">
+            <a href=""><i class="bi bi-facebook" style="color: #3b5998"></i></a>
+            <a href=""
+              ><i class="bi bi-instagram" style="color: #fd5949"></i
+            ></a>
+            <a href=""><i class="bi bi-youtube" style="color: #c4302b"></i></a>
           </div>
         </div>
-
-        <!-- Iconos -->
-        <div class="navbar-icons h3 pt-2">
-          <a href=""><i class="bi bi-facebook" style="color: aliceblue"></i></a>
-          <a href=""
-            ><i class="bi bi-instagram" style="color: aliceblue"></i
-          ></a>
-          <a href=""><i class="bi bi-youtube" style="color: aliceblue"></i></a>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- MAIN -->
     <main class="border-bottom">
