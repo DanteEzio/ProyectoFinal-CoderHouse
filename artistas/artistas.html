@@ -35,37 +35,49 @@
   <body>
     <!-- HEADER -->
     <header class="sticky-top">
+      <!-- NavBar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div
-          class="container d-flex align-items-baseline justify-content-between"
-        >
+        <div class="container">
           <!-- Logo -->
-          <div class="logo order-lg-0 order-md-1 order-sm-1 order-1">
-            <a class="navbar-brand imagen-logo text-light" href="index.html">
-              <img src="imagenes/logoHeader.svg" alt="" style="width: 60px" />
-              Ur-<span class="text-danger">Space</span>
-            </a>
-          </div>
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="imagenes/logoHeader.svg"
+              width="55"
+              height="55"
+              alt="Logo"
+            />
+            Ur-<span class="text-danger">Space</span>
+          </a>
           <!-- Pestañas -->
-          <div class="menu">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 text-center">
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="../index.html"
+                  <a class="nav-link" aria-current="page" href="../index.html"
                     >INICIO</a
                   >
                 </li>
@@ -86,7 +98,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../gira/gira.html"
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../gira/gira.html"
                     >GIRAS</a
                   >
                 </li>
@@ -99,15 +114,21 @@
                   >
                 </li>
               </ul>
+              <!-- Iconos -->
+              <div
+                class="navbar-icons h4 pt-2 px-2 text-center"
+              >
+                <a href=""
+                  ><i class="bi bi-facebook" style="color: #3b5998"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="color: #fd5949"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-youtube" style="color: #c4302b"></i
+                ></a>
+              </div>
             </div>
-          </div>
-          <!-- Iconos -->
-          <div class="navbar-icons h4 order-lg-2 order-md-2 order-sm-2 order-2">
-            <a href=""><i class="bi bi-facebook" style="color: #3b5998"></i></a>
-            <a href=""
-              ><i class="bi bi-instagram" style="color: #fd5949"></i
-            ></a>
-            <a href=""><i class="bi bi-youtube" style="color: #c4302b"></i></a>
           </div>
         </div>
       </nav>
@@ -138,7 +159,7 @@
               <div class="texto-encima">
                 <h3>Música-Indie</h3>
                 <h6 class="text-muted">Un poco de historia ...</h6>
-                <h6>
+                <p>
                   El término indie proviene del inglés independent
                   (independiente en español) y se refiere en general a
                   cualquiera de los géneros, panoramas, subculturas y atributos
@@ -149,13 +170,15 @@
                   referirse a un sonido nuevo que un músico presenta. Si se
                   interpreta de manera más literal, está ligado a las
                   condiciones de producción y circulación de su obra.
-                </h6>
+                </p>
               </div>
             </div>
             <!-- Aquí puse la lista de artistas con sus nombres respectivos -->
             <div class="col-lg-6 col-md-12 adentro">
               <div class="row">
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/arctic-monkeys.jpg"
                     alt="Galeria Noticias"
@@ -163,7 +186,9 @@
                   />
                   <p class="lead card-text texto-encima">Arctic Monkeys</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/radiohead.webp"
                     alt="Galeria Noticias"
@@ -171,7 +196,9 @@
                   />
                   <p class="lead card-text texto-encima">Radiohead</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/thekillers2019.jpg"
                     alt="Galeria Noticias"
@@ -179,7 +206,9 @@
                   />
                   <p class="lead card-text texto-encima">The Killers</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/franz-ferdinand-billy-goodbye.jpeg"
                     alt="Galeria Noticias"
@@ -187,7 +216,9 @@
                   />
                   <p class="lead card-text texto-encima">Franz Ferdinand</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/coldplay.jpeg"
                     alt="Galeria Noticias"
@@ -195,7 +226,9 @@
                   />
                   <p class="lead card-text texto-encima">Coldplay</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/Block-Party-band.png"
                     alt="Galeria Noticias"
@@ -203,7 +236,9 @@
                   />
                   <p class="lead card-text texto-encima">Block Party</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/The_Strokes_by_Roger_Woolman.jpg"
                     alt="Galeria Noticias"
@@ -211,7 +246,9 @@
                   />
                   <p class="lead card-text texto-encima">The Strokes</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/The-Kooks.jpg"
                     alt="Galeria Noticias"
@@ -219,7 +256,9 @@
                   />
                   <p class="lead card-text texto-encima">The Kooks</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/interpol.jpg"
                     alt="Galeria Noticias"
@@ -232,7 +271,9 @@
             <!-- Aquí esta una lista de artistas faltantes -->
             <div class="col-lg-6 col-md-12 adentro">
               <div class="row">
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/arcade-fire-2021.webp"
                     alt="Galeria Noticias"
@@ -240,7 +281,9 @@
                   />
                   <p class="lead card-text texto-encima">Arcade Fire</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/keane.webp"
                     alt="Galeria Noticias"
@@ -248,7 +291,9 @@
                   />
                   <p class="lead card-text texto-encima">Keane</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/sonic.jpg"
                     alt="Galeria Noticias"
@@ -256,7 +301,9 @@
                   />
                   <p class="lead card-text texto-encima">Sonic Youth</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/img-mgmt-.webp"
                     alt="Galeria Noticias"
@@ -264,7 +311,9 @@
                   />
                   <p class="lead card-text texto-encima">MGMT</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/Red-Hot-Chili-Peppers-cuida-de-sus-heridas-en-la-introspectiva-‘Not-the-One.jpg"
                     alt="Galeria Noticias"
@@ -274,7 +323,9 @@
                     Red Hot Chili Peppers
                   </p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/thehives.jpg"
                     alt="Galeria Noticias"
@@ -282,7 +333,9 @@
                   />
                   <p class="lead card-text texto-encima">The Hives</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/the-xx.jpeg"
                     alt="Galeria Noticias"
@@ -290,7 +343,9 @@
                   />
                   <p class="lead card-text texto-encima">The XX</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/theWhiteStrippes.jpg"
                     alt="Galeria Noticias"
@@ -298,7 +353,9 @@
                   />
                   <p class="lead card-text texto-encima">The White Strippes</p>
                 </div>
-                <div class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div
+                  class="imagen-adentro col-xl-4 col-lg-6 col-md-6 col-sm-12"
+                >
                   <img
                     src="imagenes/theSmiths.webp"
                     alt="Galeria Noticias"
@@ -318,7 +375,7 @@
               <div class="texto-encima">
                 <h3>Música-Indie</h3>
                 <h6 class="text-muted">Un poco de historia ...</h6>
-                <h6>
+                <p>
                   Es común para los usuarios etiquetar cualquier banda que ellos
                   sientan como "indie" aun siendo que toque un género diferente.
                   Incluso tiempo atrás los compositores de música aun estando
@@ -328,12 +385,12 @@
                   género definido como lo es el metal, rock, shoegaze,
                   electrónica, rap, o grupo de prácticamente cualquier otro
                   género comienzan a etiquetarlo como "indie".
-                </h6>
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section> 
+      </section>
     </main>
 
     <!-- FOOTER -->

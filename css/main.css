@@ -20,6 +20,42 @@ header {
   color: #f8f9fa;
   border-bottom: 4px solid #dc3545;
 }
+header nav .container .offcanvas-backdrop.fade {
+  animation: boton 10s infinite;
+}
+@keyframes boton {
+  0% {
+    background-color: #551414;
+  }
+  25% {
+    background-color: #6f3460;
+  }
+  50% {
+    background-color: #4a354f;
+  }
+  75% {
+    background-color: #8a1055;
+  }
+  100% {
+    background-color: #350000;
+  }
+}
+header nav .container .offcanvas {
+  background-color: #212529;
+}
+header nav .container .offcanvas .offcanvas-header button {
+  background-color: #dc3545;
+}
+header nav .container .offcanvas .offcanvas-body ul li a {
+  font-size: 20px;
+}
+header nav .container .offcanvas .offcanvas-body ul li a:hover {
+  color: #dc3545;
+}
+header nav .container .offcanvas .offcanvas-body ul li .active {
+  color: #dc3545;
+  font-weight: bold;
+}
 header nav .container .menu .navbar-collapse ul li a {
   font-size: 20px;
 }
@@ -378,19 +414,22 @@ main #tabla .interior .boton button:hover {
 main #artistas .container .noticias .noticia {
   height: 600px;
   position: relative;
-  display: inline-block;
   text-align: justify;
   padding: 10px;
   cursor: pointer;
 }
 main #artistas .container .noticias .noticia .texto-encima {
+  width: 80%;
+  margin: 0 auto;
+  height: 280px;
   position: absolute;
-  top: 50%;
-  left: 11%;
-  transform: translate(-5.5%, 0%);
+  top: 45%;
+  left: 0;
+  bottom: 0;
+  right: 0%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: 25px;
+  font-size: 0.8em;
   font-weight: 100;
   padding: 20px;
 }
@@ -1373,10 +1412,6 @@ footer {
   }
 }
 @media (max-width: 429px) {
-  header nav .container .logo a img {
-    display: none;
-  }
-
   main {
     /* Seccion Gira */
     /* Aqui empieza la página Artistas */

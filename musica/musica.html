@@ -35,37 +35,49 @@
   <body>
     <!-- HEADER -->
     <header class="sticky-top">
+      <!-- NavBar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div
-          class="container d-flex align-items-baseline justify-content-between"
-        >
+        <div class="container">
           <!-- Logo -->
-          <div class="logo order-lg-0 order-md-1 order-sm-1 order-1">
-            <a class="navbar-brand imagen-logo text-light" href="index.html">
-              <img src="imagenes/logoHeader.svg" alt="" style="width: 60px" />
-              Ur-<span class="text-danger">Space</span>
-            </a>
-          </div>
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="imagenes/logoHeader.svg"
+              width="55"
+              height="55"
+              alt="Logo"
+            />
+            Ur-<span class="text-danger">Space</span>
+          </a>
           <!-- Pestañas -->
-          <div class="menu">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 text-center">
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="../index.html"
+                  <a class="nav-link" aria-current="page" href="../index.html"
                     >INICIO</a
                   >
                 </li>
@@ -86,7 +98,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../gira/gira.html"
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../gira/gira.html"
                     >GIRAS</a
                   >
                 </li>
@@ -99,15 +114,21 @@
                   >
                 </li>
               </ul>
+              <!-- Iconos -->
+              <div
+                class="navbar-icons h4 pt-2 px-2 text-center"
+              >
+                <a href=""
+                  ><i class="bi bi-facebook" style="color: #3b5998"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="color: #fd5949"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-youtube" style="color: #c4302b"></i
+                ></a>
+              </div>
             </div>
-          </div>
-          <!-- Iconos -->
-          <div class="navbar-icons h4 order-lg-2 order-md-2 order-sm-2 order-2">
-            <a href=""><i class="bi bi-facebook" style="color: #3b5998"></i></a>
-            <a href=""
-              ><i class="bi bi-instagram" style="color: #fd5949"></i
-            ></a>
-            <a href=""><i class="bi bi-youtube" style="color: #c4302b"></i></a>
           </div>
         </div>
       </nav>
