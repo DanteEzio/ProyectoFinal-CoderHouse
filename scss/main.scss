@@ -89,8 +89,8 @@ main {
   }
 
   #collage {
-    .intro{
-      p{
+    .intro {
+      p {
         font-size: 1.1rem;
       }
     }
@@ -422,7 +422,7 @@ main {
             bottom: 0rem;
             right: 1rem;
             left: 1rem;
-            transform: translate(0%, 0%);
+            transform: translate(0%, -5%);
             color: $blanco;
             background-color: rgba(0, 0, 0, 0.7);
             font-size: 1em;
@@ -501,14 +501,11 @@ main {
             text-align: justify;
             font-size: 20px;
           }
-          .imagen-disco {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            img {
-              height: 400px;
-              border-radius: 0.5em;
+          .albumes {
+            .album {
+              img {
+                width: 30%;
+              }
             }
           }
         }
@@ -874,15 +871,12 @@ footer {
               bottom: 0rem;
               right: 2rem;
               left: 2rem;
-              transform: translate(0%, -0%);
+              transform: translate(0%, -5%);
               color: $blanco;
               background-color: rgba(0, 0, 0, 0.7);
               font-size: 1em;
               font-weight: 100;
               padding: 20px;
-
-
-              
             }
 
             img {
@@ -920,6 +914,36 @@ footer {
               }
             }
           }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Musica/Videos */
+    #disco {
+      .container {
+        .contenedor-disco {
+          width: 90%;
+          margin: 0 auto;
+
+          .row {
+            .albumes {
+              .album {
+                img {
+                  width: 30%;
+                }
+              }
+            }
+          }
+        }
+
+        .titulo-exitos {
+          h1 {
+            font-size: 45px;
+          }
+        }
+
+        .videos {
+          font-size: 25px;
         }
       }
     }
@@ -1074,7 +1098,7 @@ footer {
         }
         .noticias {
           .noticia {
-            height: 980px;
+            height: 400px;
 
             position: relative;
             display: inline-block;
@@ -1085,15 +1109,12 @@ footer {
               bottom: 0rem;
               right: 2rem;
               left: 2rem;
-              transform: translate(0%, -0%);
+              transform: translate(0%, -5%);
               color: $blanco;
               background-color: rgba(0, 0, 0, 0.7);
               font-size: 1em;
               font-weight: 100;
               padding: 20px;
-
-
-              
             }
 
             img {
@@ -1105,7 +1126,7 @@ footer {
           .adentro {
             .row {
               .imagen-adentro {
-                height: 200px;
+                height: 350px;
 
                 position: relative;
                 display: inline-block;
@@ -1128,6 +1149,26 @@ footer {
                   object-fit: cover;
                 }
                 cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* Aqui empieza la página Musica/Videos */
+    #disco {
+      .container {
+        .contenedor-disco {
+          width: 90%;
+          margin: 0 auto;
+
+          .row {
+            .albumes {
+              .album {
+                img {
+                  width: 40%;
+                }
               }
             }
           }
@@ -1326,13 +1367,12 @@ footer {
             display: inline-block;
             text-align: center;
 
-
             .texto-encima {
               position: absolute;
               bottom: 0rem;
               right: 2rem;
               left: 2rem;
-              transform: translate(0%, -10%);
+              transform: translate(0%, -5%);
               color: $blanco;
               background-color: rgba(0, 0, 0, 0.7);
               font-size: 1em;
@@ -1383,10 +1423,28 @@ footer {
     #disco {
       .container {
         .contenedor-disco {
-          padding-bottom: 2rem;
+          width: 90%;
+          margin: 0 auto;
+
+          .row {
+            .albumes {
+              .album {
+                img {
+                  width: 50%;
+                }
+              }
+
+              .playlist{
+                iframe{
+                  width: 90%;
+                }
+              }
+            }
+          }
         }
       }
     }
+
 
     /* Aqui empieza la página Contacto */
     #contenedor-formulario {
@@ -1409,7 +1467,7 @@ footer {
           display: none;
         }
 
-        h4 {
+        h3 {
           text-align: center;
           font-size: 30px;
           align-items: center;
@@ -1582,7 +1640,8 @@ footer {
               bottom: 0rem;
               right: 2rem;
               left: 2rem;
-              transform: translate(0%, -30%);
+              transform: translate(0%, -5%);
+              -webkit-transform: translate(0%, -10%);
               color: $blanco;
               background-color: rgba(0, 0, 0, 0.7);
               font-size: 1em;
@@ -1653,7 +1712,24 @@ footer {
     #disco {
       .container {
         .contenedor-disco {
-          padding-bottom: 2rem;
+          width: 90%;
+          margin: 0 auto;
+
+          .row {
+            .albumes {
+              .album {
+                img {
+                  width: 70%;
+                }
+              }
+
+              .playlist{
+                iframe{
+                  width: 100%;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -1679,12 +1755,12 @@ footer {
           display: none;
         }
 
-        h4 {
+        h3 {
           text-align: center;
           font-size: 30px;
           align-items: center;
-          padding-top: 3rem;
-          padding-bottom: 3rem;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
         }
       }
     }
@@ -1875,20 +1951,19 @@ footer {
               bottom: 0rem;
               right: 2rem;
               left: 2rem;
-              transform: translate(0%, -185%);
+              transform: translate(0%, -160%);
               color: $blanco;
               background-color: rgba(0, 0, 0, 0.7);
               font-size: 1em;
               font-weight: 100;
               padding: 20px;
 
-
-              h6{
-                display:none;
+              h6 {
+                display: none;
               }
 
-              p{
-                display:none;
+              p {
+                display: none;
               }
             }
 
@@ -1935,14 +2010,21 @@ footer {
     #disco {
       .container {
         .contenedor-disco {
-          padding-bottom: 2rem;
+          width: 90%;
+          margin: 0 auto;
 
           .row {
-            .imagen-disco {
-              img {
-                width: 70%;
-                margin: 0 auto;
-                height: 250px;
+            .albumes {
+              .album {
+                img {
+                  width: 90%;
+                }
+              }
+
+              .playlist{
+                iframe{
+                  width: 100%;
+                }
               }
             }
           }
@@ -1986,12 +2068,12 @@ footer {
           display: none;
         }
 
-        h4 {
+        h3 {
           text-align: center;
           font-size: 30px;
           align-items: center;
-          padding-top: 3rem;
-          padding-bottom: 3rem;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
         }
       }
     }
@@ -2195,13 +2277,12 @@ footer {
               font-weight: 100;
               padding: 20px;
 
-
-              h6{
-                display:none;
+              h6 {
+                display: none;
               }
 
-              p{
-                display:none;
+              p {
+                display: none;
               }
             }
 
@@ -2248,14 +2329,23 @@ footer {
     #disco {
       .container {
         .contenedor-disco {
-          padding-bottom: 2rem;
+          width: 100%;
+          margin: 0 auto;
 
           .row {
-            .imagen-disco {
-              img {
-                width: 70%;
-                margin: 0 auto;
-                height: 200px;
+            .albumes {
+              .album {
+                img {
+                  width: 100%;
+                  margin: 0 auto;
+                }
+              }
+
+              .playlist{
+                iframe{
+                  width: 100%;
+                  margin: 0 auto;
+                }
               }
             }
           }
