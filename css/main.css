@@ -87,6 +87,9 @@ main #informacion-portada .portada {
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
+main #collage .intro p {
+  font-size: 1.1rem;
+}
 main #collage .gallery {
   padding: 0.5rem 0;
   max-width: 100%;
