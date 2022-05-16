@@ -412,30 +412,60 @@ main #tabla .interior .boton button:hover {
   outline: 0;
 }
 main #artistas .container .noticias .noticia {
-  height: 600px;
+  height: 580px;
   position: relative;
+  display: inline-block;
   text-align: justify;
-  padding: 10px;
   cursor: pointer;
 }
 main #artistas .container .noticias .noticia .texto-encima {
-  width: 80%;
-  margin: 0 auto;
-  height: 280px;
   position: absolute;
-  top: 45%;
-  left: 0;
-  bottom: 0;
-  right: 0%;
+  bottom: 0rem;
+  right: 1rem;
+  left: 1rem;
+  transform: translate(0%, 0%);
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 100;
   padding: 20px;
 }
 main #artistas .container .noticias .noticia img {
   width: 100%;
   height: 100%;
+  animation: collage 15s infinite;
+}
+@keyframes collage {
+  0% {
+    box-shadow: 0px 0px 15px #93da49;
+  }
+  25% {
+    box-shadow: 0px 0px 15px #fe575f;
+  }
+  50% {
+    box-shadow: 0px 0px 15px #c237db;
+  }
+  75% {
+    box-shadow: 0px 0px 15px #40f2fe;
+  }
+  100% {
+    box-shadow: 0px 0px 15px #faed27;
+  }
+  0% {
+    border: 3px solid #93da49;
+  }
+  25% {
+    border: 3px solid #fe575f;
+  }
+  50% {
+    border: 3px solid #c237db;
+  }
+  75% {
+    border: 3px solid #40f2fe;
+  }
+  100% {
+    border: 3px solid #faed27;
+  }
 }
 main #artistas .container .noticias .noticia img:hover {
   box-shadow: 0px 0px 15px rgba(254, 255, 181, 0.7);
@@ -765,20 +795,50 @@ footer {
     width: 50%;
   }
   main #artistas .container .titulo h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   main #artistas .container .noticias .noticia {
-    height: 600px;
+    height: 580px;
+    position: relative;
+    display: inline-block;
+    text-align: justify;
+  }
+  main #artistas .container .noticias .noticia .texto-encima {
+    position: absolute;
+    bottom: 0rem;
+    right: 2rem;
+    left: 2rem;
+    transform: translate(0%, 0%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1em;
+    font-weight: 100;
+    padding: 20px;
   }
   main #artistas .container .noticias .noticia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro {
     height: 200px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 100;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   main #contenedor-formulario .formulario .envoltura {
@@ -885,20 +945,50 @@ footer {
     font-size: 22px !important;
   }
   main #artistas .container .titulo h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   main #artistas .container .noticias .noticia {
-    height: 1000px;
+    height: 980px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  main #artistas .container .noticias .noticia .texto-encima {
+    position: absolute;
+    bottom: 0rem;
+    right: 2rem;
+    left: 2rem;
+    transform: translate(0%, 0%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1em;
+    font-weight: 100;
+    padding: 20px;
   }
   main #artistas .container .noticias .noticia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro {
     height: 200px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 100;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   main #contenedor-formulario .formulario .envoltura {
@@ -1019,34 +1109,50 @@ footer {
     font-size: 15px;
   }
   main #artistas .container .titulo h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   main #artistas .container .noticias .noticia {
     height: 350px;
     position: relative;
     display: inline-block;
-    text-align: justify;
+    text-align: center;
   }
   main #artistas .container .noticias .noticia .texto-encima {
     position: absolute;
-    top: 20%;
-    left: 11%;
-    transform: translate(-5.5%, 0%);
+    bottom: 0rem;
+    right: 2rem;
+    left: 2rem;
+    transform: translate(0%, -10%);
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 25px;
+    font-size: 1em;
     font-weight: 100;
     padding: 20px;
   }
   main #artistas .container .noticias .noticia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro {
-    height: 300px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 100;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   main #disco .container .contenedor-disco {
@@ -1174,7 +1280,7 @@ footer {
     width: 70%;
   }
   main #artistas .container .titulo h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   main #artistas .container .noticias .noticia {
     height: 450px;
@@ -1184,27 +1290,40 @@ footer {
   }
   main #artistas .container .noticias .noticia .texto-encima {
     position: absolute;
-    top: 25%;
-    left: 11%;
-    transform: translate(-5.5%, 0%);
+    bottom: 0rem;
+    right: 2rem;
+    left: 2rem;
+    transform: translate(0%, -30%);
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 25px;
+    font-size: 1em;
     font-weight: 100;
     padding: 20px;
   }
   main #artistas .container .noticias .noticia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro {
     height: 450px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
-    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 100;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   main #tabla .interior {
@@ -1355,7 +1474,7 @@ footer {
     padding: 8px 10px;
   }
   main #artistas .container .titulo h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   main #artistas .container .noticias .noticia {
     height: 350px;
@@ -1365,33 +1484,46 @@ footer {
   }
   main #artistas .container .noticias .noticia .texto-encima {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0rem;
+    right: 2rem;
+    left: 2rem;
+    transform: translate(0%, -185%);
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 25px;
+    font-size: 1em;
     font-weight: 100;
     padding: 20px;
   }
   main #artistas .container .noticias .noticia .texto-encima h6 {
     display: none;
   }
-  main #artistas .container .noticias .noticia .texto-encima h3 {
-    font-size: 35px;
+  main #artistas .container .noticias .noticia .texto-encima p {
+    display: none;
   }
   main #artistas .container .noticias .noticia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro {
     height: 350px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
-    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 100;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   main #disco .container .contenedor-disco {
@@ -1545,7 +1677,7 @@ footer {
     padding: 8px 10px;
   }
   main #artistas .container .titulo h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   main #artistas .container .noticias .noticia {
     height: 300px;
@@ -1555,33 +1687,46 @@ footer {
   }
   main #artistas .container .noticias .noticia .texto-encima {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0rem;
+    right: 2rem;
+    left: 2rem;
+    transform: translate(0%, -145%);
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 25px;
+    font-size: 1em;
     font-weight: 100;
     padding: 20px;
   }
   main #artistas .container .noticias .noticia .texto-encima h6 {
     display: none;
   }
-  main #artistas .container .noticias .noticia .texto-encima h3 {
-    font-size: 30px;
+  main #artistas .container .noticias .noticia .texto-encima p {
+    display: none;
   }
   main #artistas .container .noticias .noticia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro {
     height: 300px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro .texto-encima {
-    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 100;
   }
   main #artistas .container .noticias .adentro .row .imagen-adentro img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   main #disco .container .contenedor-disco {
