@@ -591,6 +591,7 @@ main #contenedor-formulario .formulario .envoltura .formato-contacto form .row .
 main #contenedor-formulario .formulario .envoltura .contact-info {
   background: #212529;
   text-align: center;
+  padding: 1em;
 }
 main #contenedor-formulario .formulario .envoltura .contact-info ul {
   list-style: none;
